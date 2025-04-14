@@ -1,0 +1,35 @@
+/* Styles/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;}
+   
+    .nav-links li a {
+        text-decoration: none;
+        color: inherit; 
+        font-size: 1.05rem;
+    }

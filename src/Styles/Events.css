@@ -1,0 +1,138 @@
+/* Main Wrapper */
+/* .community-happenings {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  } */
+  
+  /* Hero Section */
+  .engagement-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    color: white;
+  }
+  
+  .engagement-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* darken the image */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+  
+  .hero-content h1 {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.9;
+    text-align: left;
+  }
+  
+  /* Happenings Section */
+  .happenings-section {
+    padding: 60px;
+    background-color: #f5f5f5;
+  }
+  
+  .happenings-section header {
+    min-width: 600px;
+    margin-bottom: 40px;
+  }
+  
+  .happenings-section h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #000;
+    text-align:left ;
+  }
+  
+  /* Card Grid */
+  .happenings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 26px;
+  }
+  
+  /* Card Item */
+  .happening-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px;
+    cursor: pointer;
+  }
+  
+  .happening-card img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display: block;
+  }
+  
+  .happening-card .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+  
+  .happening-card .text-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+  }
+  
+  .happening-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+  
+  .happening-card span {
+    font-size: 0.85rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .engagement-hero {
+      padding: 30px 20px;
+      height: 400px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .happenings-section {
+      padding: 40px 20px;
+    }
+  }
+  
